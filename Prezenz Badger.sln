@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32002.261
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prezenz Badger", "Prezenz Badger.csproj", "{B429FB05-4B4D-4A42-AE92-BB8C209D8E48}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prezenz Badger", "Prezenz Badger.csproj", "{84FCF6E1-173F-44FF-BCF8-8BD44163A427}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B429FB05-4B4D-4A42-AE92-BB8C209D8E48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B429FB05-4B4D-4A42-AE92-BB8C209D8E48}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B429FB05-4B4D-4A42-AE92-BB8C209D8E48}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B429FB05-4B4D-4A42-AE92-BB8C209D8E48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84FCF6E1-173F-44FF-BCF8-8BD44163A427}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84FCF6E1-173F-44FF-BCF8-8BD44163A427}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84FCF6E1-173F-44FF-BCF8-8BD44163A427}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84FCF6E1-173F-44FF-BCF8-8BD44163A427}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {CD2A6D1E-ACA0-4683-B8EC-1A2A75931FC2}
+		SolutionGuid = {8ECBEDB5-0177-400F-BA9F-EE2C94669490}
 	EndGlobalSection
 EndGlobal

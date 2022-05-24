@@ -1,0 +1,366 @@
+{
+  "kind": "discovery#restDescription",
+  "discoveryVersion": "v1",
+  "id": "Prezenz Badger",
+  "name": "Prezenz Badger",
+  "version": "1.0",
+  "protocol": "dll",
+  "baseUrl": null,
+  "basePath": "",
+  "auth": {},
+  "dependencies": [
+    "Prezenz Badger.dll",
+    "Newtonsoft.Json.dll"
+  ],
+  "schemas": {
+    "HoltEnvironments.BarcodeScanner": {
+      "id": "HoltEnvironments.BarcodeScanner",
+      "type": "object",
+      "properties": {
+        "SerialPortName": {
+          "title": "SerialPortName",
+          "type": "string",
+          "description": "SerialPortName"
+        },
+        "BaudRate": {
+          "title": "BaudRate",
+          "type": "integer",
+          "description": "BaudRate"
+        },
+        "ProductId": {
+          "title": "ProductId",
+          "type": "integer",
+          "description": "ProductId"
+        },
+        "VendorId": {
+          "title": "VendorId",
+          "type": "integer",
+          "description": "VendorId"
+        },
+        "Driver": {
+          "title": "Driver",
+          "type": "string",
+          "description": "Driver"
+        },
+        "DataBits": {
+          "title": "DataBits",
+          "type": "integer",
+          "description": "DataBits"
+        },
+        "Parity": {
+          "title": "Parity",
+          "type": "integer",
+          "description": "Parity"
+        },
+        "ActivityLog": {
+          "title": "ActivityLog",
+          "type": "string",
+          "description": "ActivityLog"
+        },
+        "SerialList": {
+          "title": "SerialList",
+          "type": "string",
+          "description": "SerialList"
+        }
+      }
+    },
+    "HoltEnvironments.PrezenzBadger": {
+      "id": "HoltEnvironments.PrezenzBadger",
+      "type": "object",
+      "properties": {
+        "SerialPortName": {
+          "title": "SerialPortName",
+          "type": "string",
+          "description": "SerialPortName"
+        },
+        "BaudRate": {
+          "title": "BaudRate",
+          "type": "integer",
+          "description": "BaudRate"
+        },
+        "FirstName": {
+          "title": "FirstName",
+          "type": "string",
+		  "readonly": true,
+          "description": "FirstName"
+        },
+        "LastName": {
+          "title": "LastName",
+          "type": "string",
+		  "readonly": true,
+          "description": "LastName"
+        },
+        "Title": {
+          "title": "Title",
+          "type": "string",
+		  "readonly": true,
+          "description": "Title"
+        },
+        "Company": {
+          "title": "Company",
+          "type": "string",
+		  "readonly": true,
+          "description": "Company"
+        },
+        "Email": {
+          "title": "Email",
+          "type": "string",
+		  "readonly": true,
+          "description": "Email"
+        },
+        "Phone": {
+          "title": "Phone",
+          "type": "string",
+		  "readonly": true,
+          "description": "Phone"
+        }
+      }
+    },
+    "HoltEnvironments.IBadgerTranscoder": {
+      "id": "HoltEnvironments.IBadgerTranscoder",
+      "type": "object"
+    },
+    "HoltEvironments.ApiResponse": {
+      "id": "HoltEvironments.ApiResponse",
+      "type": "object",
+      "properties": {
+        "Success": {
+          "title": "Success",
+          "type": "boolean",
+          "description": "Success"
+        },
+        "Messages": {
+          "title": "Messages",
+          "type": "object",
+          "description": "Messages"
+        },
+        "LeadInfo": {
+          "$ref": "HoltEvironments.LeadInfo"
+        },
+        "Demographics": {
+          "title": "Demographics",
+          "type": "object",
+          "description": "Demographics"
+        }
+      }
+    },
+    "HoltEvironments.Demographic": {
+      "id": "HoltEvironments.Demographic",
+      "type": "object",
+      "properties": {
+        "Key": {
+          "title": "Key",
+          "type": "string",
+          "description": "Key"
+        },
+        "Description": {
+          "title": "Description",
+          "type": "string",
+          "description": "Description"
+        },
+        "Value": {
+          "title": "Value",
+          "type": "string",
+          "description": "Value"
+        }
+      }
+    },
+    "HoltEvironments.LeadInfo": {
+      "id": "HoltEvironments.LeadInfo",
+      "type": "object",
+      "properties": {
+        "LeadId": {
+          "title": "LeadId",
+          "type": "string",
+          "description": "LeadId"
+        },
+        "CapturedDate": {
+          "title": "CapturedDate",
+          "type": "string",
+          "description": "CapturedDate"
+        },
+        "CapturedBy": {
+          "title": "CapturedBy",
+          "type": "string",
+          "description": "CapturedBy"
+        },
+        "ConnectKey": {
+          "title": "ConnectKey",
+          "type": "string",
+          "description": "ConnectKey"
+        },
+        "FirstName": {
+          "title": "FirstName",
+          "type": "string",
+          "description": "FirstName"
+        },
+        "LastName": {
+          "title": "LastName",
+          "type": "string",
+          "description": "LastName"
+        },
+        "Title": {
+          "title": "Title",
+          "type": "string",
+          "description": "Title"
+        },
+        "Company": {
+          "title": "Company",
+          "type": "string",
+          "description": "Company"
+        },
+        "Company2": {
+          "title": "Company2",
+          "type": "string",
+          "description": "Company2"
+        },
+        "Address": {
+          "title": "Address",
+          "type": "string",
+          "description": "Address"
+        },
+        "Address2": {
+          "title": "Address2",
+          "type": "string",
+          "description": "Address2"
+        },
+        "Address3": {
+          "title": "Address3",
+          "type": "string",
+          "description": "Address3"
+        },
+        "City": {
+          "title": "City",
+          "type": "string",
+          "description": "City"
+        },
+        "StateCode": {
+          "title": "StateCode",
+          "type": "string",
+          "description": "StateCode"
+        },
+        "ZipCode": {
+          "title": "ZipCode",
+          "type": "string",
+          "description": "ZipCode"
+        },
+        "CountryCode": {
+          "title": "CountryCode",
+          "type": "string",
+          "description": "CountryCode"
+        },
+        "Email": {
+          "title": "Email",
+          "type": "string",
+          "description": "Email"
+        },
+        "Phone": {
+          "title": "Phone",
+          "type": "string",
+          "description": "Phone"
+        },
+        "PhoneExtension": {
+          "title": "PhoneExtension",
+          "type": "string",
+          "description": "PhoneExtension"
+        },
+        "Fax": {
+          "title": "Fax",
+          "type": "string",
+          "description": "Fax"
+        },
+        "Notes": {
+          "title": "Notes",
+          "type": "string",
+          "description": "Notes"
+        }
+      }
+    },
+    "HoltEvironments.Serialize": {
+      "id": "HoltEvironments.Serialize",
+      "type": "object"
+    }
+  },
+  "resources": {
+    "HoltEnvironments.BarcodeScanner": {
+      "title": "BarcodeScanner",
+      "isInterfaceAsset": false,
+      "methods": {
+        "OpenConnection": {
+          "title": "OpenConnection",
+          "description": "OpenConnection",
+          "response": {
+            "type": "null"
+          }
+        },
+        "CloseConnection": {
+          "title": "CloseConnection",
+          "description": "CloseConnection",
+          "response": {
+            "type": "null"
+          }
+        },
+        "Dispose": {
+          "title": "Dispose",
+          "description": "Dispose",
+          "response": {
+            "type": "null"
+          }
+        }
+      },
+      "events": {
+        "StatusMessage": {
+          "id": "StatusMessage"
+        },
+        "CodeScanned": {
+          "id": "CodeScanned"
+        }
+      }
+    },
+    "HoltEnvironments.PrezenzBadger": {
+      "title": "PrezenzBadger",
+      "isInterfaceAsset": true,
+	  "methods": {
+        "Connect": {
+          "title": "Connect",
+          "description": "Connect to barcode scanner",
+          "response": {
+            "type": "null"
+          }
+        },
+		"Disconnect": {
+          "title": "Disconnect",
+          "description": "Disconnect from barcode scanner",
+          "response": {
+            "type": "null"
+          }
+        }
+	  },
+      "events": {
+        "DataRetrievedFromScan": {
+          "id": "DataRetrievedFromScan"
+        }
+      }
+    },
+    "HoltEnvironments.IBadgerTranscoder": {
+      "title": "IBadgerTranscoder",
+      "isInterfaceAsset": false
+    },
+    "HoltEvironments.ApiResponse": {
+      "title": "ApiResponse",
+      "isInterfaceAsset": false
+    },
+    "HoltEvironments.Demographic": {
+      "title": "Demographic",
+      "isInterfaceAsset": false
+    },
+    "HoltEvironments.LeadInfo": {
+      "title": "LeadInfo",
+      "isInterfaceAsset": false
+    },
+    "HoltEvironments.Serialize": {
+      "title": "Serialize",
+      "isInterfaceAsset": false
+    }
+  }
+}
